@@ -28,3 +28,7 @@ VITE_MODEL=<your-model>
 ```bash
 pnpm dev
 ```
+
+4. Build the project
+
+Build have some issues, will fix later.
