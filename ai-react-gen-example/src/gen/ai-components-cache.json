@@ -1,30 +1,226 @@
 {
-  "a red input field with a placeholder \"Enter your name\"": {
-    "component": "input",
-    "type": "text",
-    "style": {
-      "color": "red"
-    },
-    "placeholder": "Enter your name"
-  },
   "a green div with white text that says \"Hello, AI!\"": {
     "component": "div",
     "style": {
       "backgroundColor": "green",
-      "color": "white",
-      "textAlign": "center"
+      "color": "white"
     },
     "children": "Hello, AI!"
+  },
+  "a red input field with a placeholder \"Enter your name\"": {
+    "component": "input",
+    "style": {
+      "borderColor": "red",
+      "color": "red"
+    },
+    "placeholder": "Enter your name",
+    "type": "text"
+  },
+  "a div with text \"Hello, World By AI React Gen!\" and a description \"This is a card\" in children": {
+    "component": "div",
+    "children": [
+      "Hello, World By AI React Gen!",
+      {
+        "component": "p",
+        "children": "This is a card"
+      }
+    ]
   },
   "a blue button with rounded corners that says \"Click me!\"": {
     "component": "button",
     "style": {
       "backgroundColor": "blue",
-      "borderRadius": "5px",
       "color": "white",
+      "borderRadius": "5px",
       "padding": "10px 20px",
       "border": "none"
     },
     "children": "Click me!"
+  },
+  "a div with text \"Hello, World By AI React Gen!\" and a description \"This is a card\" with span in children ": {
+    "component": "div",
+    "style": {},
+    "children": [
+      "Hello, World By AI React Gen!",
+      {
+        "component": "span",
+        "style": {},
+        "children": "This is a card"
+      }
+    ]
+  },
+  "a div with text \"Hello, World By AI React Gen!\" and a description \"This is a card\" in children ": {
+    "component": "div",
+    "children": [
+      "Hello, World By AI React Gen!",
+      {
+        "component": "div",
+        "children": "This is a card"
+      }
+    ]
+  },
+  "a div with text \"Hello, World By AI React Gen!\" and a description \"This is a card\" in children and a background color of green": {
+    "component": "div",
+    "style": {
+      "backgroundColor": "green"
+    },
+    "children": [
+      "Hello, World By AI React Gen!",
+      {
+        "component": "div",
+        "children": "This is a card"
+      }
+    ]
+  },
+  "a div with text \"Hello, World By AI React Gen!\" and a description \"This is a card\" text in children": {
+    "component": "div",
+    "children": [
+      {
+        "component": "div",
+        "children": "Hello, World By AI React Gen!"
+      },
+      {
+        "component": "div",
+        "children": "This is a card"
+      }
+    ]
+  },
+  "a twitter tweet card": {
+    "component": "div",
+    "style": {
+      "border": "1px solid #ccc",
+      "borderRadius": "10px",
+      "padding": "15px",
+      "maxWidth": "500px",
+      "margin": "10px auto",
+      "backgroundColor": "#fff"
+    },
+    "children": [
+      {
+        "component": "div",
+        "style": {
+          "display": "flex",
+          "alignItems": "center"
+        },
+        "children": [
+          {
+            "component": "img",
+            "style": {
+              "width": "50px",
+              "height": "50px",
+              "borderRadius": "50%",
+              "marginRight": "10px"
+            },
+            "src": "profile_image_url",
+            "alt": "Profile"
+          },
+          {
+            "component": "div",
+            "children": [
+              {
+                "component": "strong",
+                "children": "Username"
+              },
+              {
+                "component": "span",
+                "style": {
+                  "color": "#657786",
+                  "marginLeft": "5px"
+                },
+                "children": "@username"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "p",
+        "style": {
+          "marginTop": "10px",
+          "color": "#14171a"
+        },
+        "children": "This is a tweet content."
+      },
+      {
+        "component": "div",
+        "style": {
+          "marginTop": "10px",
+          "color": "#657786"
+        },
+        "children": [
+          {
+            "component": "span",
+            "children": "2:38 PM · Oct 27, 2023"
+          }
+        ]
+      }
+    ]
+  },
+  "a div mock twitter tweet card": {
+    "component": "div",
+    "style": {
+      "border": "1px solid #ccc",
+      "borderRadius": "10px",
+      "padding": "15px",
+      "width": "300px",
+      "backgroundColor": "#fff",
+      "boxShadow": "0 2px 4px rgba(0, 0, 0, 0.1)"
+    },
+    "children": [
+      {
+        "component": "div",
+        "style": {
+          "display": "flex",
+          "alignItems": "center"
+        },
+        "children": [
+          {
+            "component": "img",
+            "style": {
+              "width": "48px",
+              "height": "48px",
+              "borderRadius": "50%",
+              "marginRight": "10px"
+            },
+            "src": "profile.jpg",
+            "alt": "Profile"
+          },
+          {
+            "component": "div",
+            "children": [
+              {
+                "component": "strong",
+                "children": "John Doe"
+              },
+              {
+                "component": "span",
+                "style": {
+                  "color": "#657786",
+                  "marginLeft": "5px"
+                },
+                "children": "@johndoe"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "p",
+        "style": {
+          "marginTop": "10px",
+          "color": "#14171a"
+        },
+        "children": "This is a mock tweet content."
+      },
+      {
+        "component": "div",
+        "style": {
+          "marginTop": "10px",
+          "color": "#657786",
+          "fontSize": "0.9em"
+        },
+        "children": "10:30 AM - 1 Jan 2022"
+      }
+    ]
   }
 }
