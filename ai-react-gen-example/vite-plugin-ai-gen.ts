@@ -68,12 +68,15 @@ export default function aiGenPlugin(options: AIGenPluginOptions): Plugin {
         await fsPromises.mkdir(path.dirname(cacheFile), { recursive: true });
         if (fs.existsSync(cacheFile)) {
           cache = JSON.parse(await fsPromises.readFile(cacheFile, "utf-8"));
-          console.log("已加载缓存:", cache);
+          console.log("Loaded cache:", cache);
         } else {
-          console.log("未找到缓存文件，将在首次使用时创建");
+          console.log("No cache file found, will create on first use");
         }
       } catch (error) {
-        console.error("创建缓存目录或读取缓存文件时出错:", error);
+        console.error(
+          "Error creating cache directory or reading cache file:",
+          error
+        );
       }
     },
     resolveId(id) {
@@ -127,7 +130,7 @@ export default function aiGenPlugin(options: AIGenPluginOptions): Plugin {
                 server.moduleGraph.invalidateAll();
                 server.ws.send({ type: "full-reload" });
               } catch (error) {
-                console.error("写入缓存文件时出错:", error);
+                console.error("Error writing cache file:", error);
               }
             }
             res.statusCode = 200;

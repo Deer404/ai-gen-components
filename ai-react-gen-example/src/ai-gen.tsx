@@ -29,7 +29,7 @@ function useAIComponent(prompt: string) {
               loading: false,
             });
         } else {
-          console.log("组件未找到，正在请求生成");
+          console.log("Component not found, requesting generation");
           const response = await fetch("/__ai-cache", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -52,11 +52,11 @@ function useAIComponent(prompt: string) {
           }
         }
       } catch (error) {
-        console.error("获取AI组件时出错:", error);
+        console.error("Error getting AI component:", error);
         if (isMounted)
           setState({
             component: null,
-            error: `加载组件 "${memoizedPrompt}" 时出错: ${error.message}`,
+            error: `Error loading component "${memoizedPrompt}": ${error.message}`,
             loading: false,
           });
       }
@@ -82,7 +82,7 @@ export const ai = {
       const { component, error, loading } = useAIComponent(prompt);
 
       if (loading) {
-        return <div>加载中...</div>;
+        return <div>Loading...</div>;
       }
 
       if (error) {
