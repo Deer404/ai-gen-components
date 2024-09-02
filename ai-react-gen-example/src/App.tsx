@@ -1,5 +1,4 @@
 import { ai } from "./ai-gen";
-import "unocss";
 
 const BlueButton = ai.gen`a blue button with rounded corners that says "Click me!"`;
 const RedInput = ai.gen`a red input field with a placeholder "Enter your name"`;
