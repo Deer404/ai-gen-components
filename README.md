@@ -2,6 +2,8 @@
 
 This is a simple example of how to use AI React Gen to generate React components.
 
+Production will not request OpenAI again and will be converted into components.
+
 
 ## Precautions
 
@@ -31,4 +33,7 @@ pnpm dev
 
 4. Build the project
 
-Build have some issues, will fix later.
+```bash
+pnpm build
+```
+
